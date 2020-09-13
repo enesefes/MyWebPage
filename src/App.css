@@ -1,38 +1,489 @@
-.App {
+.app{
+  margin: 0;
+}
+.app-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+}
+
+.app-logo{
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+}
+
+
+.header__right > a{
+  text-align: center;
+  border-radius: 290426px;
+  background-color: transparent;
+  border-color: #ff790f;
+  color: #ff790f;
+  outline: none;
+  border: solid;
+  font-size: 18px;
+  font-family: "europa", sans-serif;
+  padding: 1rem 1rem;
+  font-weight: 400;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+.header__right > a:hover{
+  color: white;
+  background-color: #ff790f;
+  border: none;
+}
+
+.home{
+  padding: 3rem 1.5rem;
+}
+
+.home_container{
+  display: block;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home_container_texts > h1 {
+  color: #141c3a;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-size:3rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home_container_texts > p {
+  font-family: "europa", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: rgba(10, 10, 10, 0.9);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.my__photo{
+  width: 400px;
+  object-fit: contain;
+  margin: 0 20px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 30px 8px #dedede;
+}
+
+
+.home__codePhoto{
+  display: grid;
+  margin-top: 100px;
+}
+
+.home__codePhoto > img {
+  width: 600px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.home__second{
+  
+  background-color: #ff790f;
+  padding: 9rem 1.5rem;
+  text-align: center;
+  color: white;
+}
+.home__second__texts{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.home__second__texts > h1 {
+  margin-bottom: 1.5rem;
+}
+.home__second__texts > h2 {
+  font-family: "europa", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  box-sizing: inherit;
+}
+
+
+.about_me{
+  margin-top: -8rem;
+  
+}
+
+.jobs{
+  background-color: white;
+  border-radius: 6px;
+  margin: 0px 20px 0px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;  
+}
+
+.jobs > .about_me_jobs > .MuiSvgIcon-root {
+  width: auto;
+  height: 48px;
+}
+
+.about_me_jobs{
+  background-color: white;
+  width: 33%;
+  border-bottom: 0px solid #E6ECF8;
+  border-right: 1px solid #E6ECF8;
+  padding: 60px 35px;
+}
+
+
+.about_me_jobs > h1{
+  font-size: 24px;
+  font-family: "eurostile", sans-serif;
+  font-weight: 800;
+  color: #141c3a;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.jobs__p{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #141c3a;
+  margin-bottom: 2em;
+  font-weight: 300;
+}
+p{
+  font-size: 18px;
+  text-align: center;
+  color: #141c3a;
+  margin-bottom: 2em;
+  font-weight: 300;
+}
+
+.bold__color{
+  color: #ff790f;
+  font-weight: 500;
+}
+
+.jobs__p__head{
+  margin-top: 50px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff790f;
+}
+
+#below__icon{
+  color: #141c3a;
+}
+
+.jobs__p__head__tools{
+  margin-top: 4em;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff790f;
+}
+
+
+.my__projects{
+  padding: 9rem 1.5rem;
+  text-align: center;
+}
+
+.my__projects > h1{
+  font-size: 2rem;
+  font-family: "eurostile", sans-serif;
+  font-weight: 800;
+  color: #141c3a;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects{
+  display: flex;
+  margin-top: 3em;
+}
+
+#project__card__image{
+  object-fit: contain;
+  height: 100px;
+}
+
+#button{
+  background-color: #ff790f;
+}
+#button__noneBgColor {
+  color: #141c3a;
+}
+
+.project__details > img{
+  width: auto;
+  height: 100px;
+}
+
+.project__details__h1{
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+.project__footer{
+  display: grid;
+}
+
+.project__footer__button{
+  display: flex;
+}
+.project__footer__img{
+  display: flex;
+}
+.project__footer__img > img {
+  width: auto;
+  height: 3rem;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.project__button__github{
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  border-radius: 290426px;
+  font-weight: 400;
+  background-color: #141c3a;
+  border-color: none;
+  color: white;
+  outline: none;
+  border: solid;
+  font-size: 18px;
+  font-family: "europa", sans-serif;
+  border-width: 2px;
+  padding: 0px 10px 0px 10px;
+}
+
+.project__button{
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  border-radius: 290426px;
+  font-weight: 400;
+  background-color: transparent;
+  border-color: #ff790f;
+  color: #ff790f;
+  outline: none;
+  border: solid;
+  font-size: 18px;
+  font-family: "europa", sans-serif;
+  border-width: 2px;
+  padding: 0px 10px 0px 10px;
+}
+
+.project_contanier{
+  width: -webkit-fill-available;
+  margin: 20px;
+}
+
+#bubbleLogo{
+  height: 1em;
+}
+
+#project__heading{
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: "eurostile", sans-serif;
+}
+
+.contact{
+  background-color: transparent;
+  padding: 9rem 1.5rem;
+  text-align: center;
+  color: #141c3a;
+  border-bottom: 1px solid #E6ECF8;
+}
+
+.contact > h1 {
+  margin-bottom: 1.5rem;
+}
+.contact > p {
+  font-family: "europa", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color:#141c3a;
+  margin-bottom:3rem;
+}
+
+.contact > a {
+  text-align: center;
+  border-radius: 290426px;
+  background-color: transparent;
+  border-color: #ff790f;
+  color: #ff790f;
+  outline: none;
+  border: solid;
+  font-size: 18px;
+  font-family: "europa", sans-serif;
+  padding: 1.25em 2em;
+  font-weight: 400;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+.contact > a:hover{
+  color: white;
+  background-color: #ff790f;
+  border: none;
+}
+.footer{
+  display: grid;
+  text-align: center;
+  background-color: #ff790f;
+  padding: 3.5rem 0.5rem;
+}
+
+.footer__img{
+  background-color: white;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 30px 0px #dedede;
+}
+
+.footer__img > img {
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.footer > p{
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  max-width: 300px;
+  opacity: 0.7;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer__social{
+  
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer_social__Button{
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #f0f0f0;
+  width: max-content;
+  padding: 10px;
+  margin: 10px;
+}
+
+.footer_social__Button:hover{
+  background-color: white;
+}
+
+.footer_social__Button:hover  > .MuiSvgIcon-root{
+  color: #ff790f;
+}
+
+
+.footer_social__Button > .MuiSvgIcon-root{
+  width: auto;
+  height: 32px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px){
+  .my__photo{
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: 10px 10px 30px 8px #dedede;
+}
+  .home_container_texts > h1 {
+    color: #141c3a;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 2em;
+    
   }
-  to {
-    transform: rotate(360deg);
+  
+  .home_container_texts > p {
+    font-family: "europa", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgba(10, 10, 10, 0.9);
   }
+
+  .home__second__texts{
+    width: 90%;
+  }
+
+  .home__codePhoto > img{
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  .projects{
+    display: grid;
+    margin-top: 3em;
+  }
+  .project_contanier{
+    width: auto;
+    margin: 50px 0px 0px 0px;
+    
+  }
+  .jobs{
+    background-color: white;
+    border-radius: 6px;
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;  
+  }
+  .about_me_jobs{
+    margin: 0 auto;
+    width: 75vw;
+  }
+
+  .footer_social__Button > .MuiSvgIcon-root{
+    width: auto;
+    height: 24px;
+    color: white;
+  }
+  
+}
+
+@media only screen and (max-width: 340px) and (min-width: 100px){
+  .home_container_texts > h1 {
+    font-size: 2rem;
+  }
+
+  .home__codePhoto > img{
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  
+
+
 }
