@@ -60,7 +60,7 @@ function App() {
       <div className="home__second">
           <div className="home__second__texts">
           <h1>Hello I'm Enes. Nice to meet you.</h1>
-          <h2>Problem çözmeye merakla başladım. Merak beni en başta o kadar büyük bir denizin içinde tek başıma kaybolmuşum gibi hissterdi. Sonra bu merak daha fazla arttı ve şimdilerde etrafımında ki problemleri teknolojiyi kullanarak çözer oldum.</h2>
+          <h2> I started problem solving with curiosity. At first, curiosity made me feel lost alone in such a large sea. Then this curiosity got more and more, and now I have been solving the problems around me using technology. </h2>
           </div>
       </div>
       <div className="about_me">
