@@ -68,7 +68,7 @@ function App() {
           <div className="about_me_jobs">
             <SportsSoccerOutlinedIcon fontSize="large"/>
             <h1>Sports Scientist</h1>
-            <p className="jobs__p"> Spor bilimleri alanında <b className="bold__color">yeni teknolojiler</b> üzerine çalışmayı çok seviyorum.</p>
+            <p className="jobs__p"> I love working on <b className="bold__color">new technologies</b> in the field of sports science.</p>
             <p className="jobs__p__head">Topics I'm interested in:</p>
             <p>Sport Analyze, Performance, Flexibility</p>
             <p className="jobs__p__head">Diploma and Certificates:</p>
@@ -77,7 +77,7 @@ function App() {
           <div className="about_me_jobs">
             <CodeOutlinedIcon fontSize="large"/>
             <h1>Front End Developer</h1>
-            <p className="jobs__p">Kodlamayı ve yeni ürünler çıkarmaya bayılıyorum. Ayrıca <b className="bold__color">merak</b> sayesinde bir çok projeyi hayata geçirebilirim.</p>
+            <p className="jobs__p"> I love coding and releasing new products. Also, thanks to <b className="bold__color">curiosity</b>, I can realize many projects.</p>
             <p className="jobs__p__head">Languages I speak:</p>
             <p>Html, Css, Javascript, React, Svelte,</p>
             <p className="jobs__p__head__tools">Tools:</p>
@@ -86,7 +86,7 @@ function App() {
           <div className="about_me_jobs">
             <EmojiObjectsOutlinedIcon fontSize="large"/>
             <h1>Entrepreneur</h1>
-            <p className="jobs__p"> <b className="bold__color">Problemlere bir şekilde çözüm bulmak</b> benim hayatımın merkezinde yer alıyor.</p>
+            <p className="jobs__p"> <b className="bold__color"> Finding solutions to problems in some way</b> is at the center of my life.</p>
             <p className="jobs__p__head">Sectors I'm Interested in:</p>
             <p>Sports, Saas, Marketplace, E-commerce</p>
             <p className="jobs__p__head">Projects:</p>
@@ -115,7 +115,7 @@ function App() {
                             Whatsapp Clone
                           </Typography>
                           <Typography variant="body2" color="textSecondary" component="p">
-                            Bu çalışmada react ve firebase kullanılmıştır. Ve kullanıcı gmail ile giriş sistemi yapılmıştır.
+                            This project is done with react and firebase. And user login system has been made with gmail.
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -145,7 +145,7 @@ function App() {
                             Direktsell.com
                           </Typography>
                           <Typography variant="body2" color="textSecondary" component="p">
-                            İhracaat ve ithalat yapmak isteyenlerin buluştuğu ilanları şirketlerini ve diğer şirketlerle iletişime geçtiği pazaryeri.
+                            The marketplace where those who want to export and import list their ads and companies and communicate with other companies.
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -175,7 +175,7 @@ function App() {
                             Linktree Clone
                           </Typography>
                           <Typography variant="body2" color="textSecondary" component="p">
-                            İnstagram satıcıları için kendi ürünlerini ve bilgilerini ekleyebilikleri bir mini e ticaret sitesidir.
+                            It is a mini e-commerce site for instagram sellers where they can add their own products and information.
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -211,7 +211,7 @@ function App() {
                             Saas Landing Page
                           </Typography>
                           <Typography variant="body2" color="textSecondary" component="p">
-                            Bu proje sadece tek bir sayfadan oluşmaktadır ve bubble ile yapılmıştır. Bubble ile tasarım da yapabilirsiniz.
+                            This project consists of only one page and is made with Bubble. You can also design with Bubble.
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -242,7 +242,7 @@ function App() {
                             My Note App
                           </Typography>
                           <Typography variant="body2" color="textSecondary" component="p">
-                            Bu uygulama not almak için yapılmıştır ve kullanıcı login sistemi userbase ve svelte kullanılarak yapılmıştır
+                           This application is made for taking notes with Svelte. User login system is made using Userbase.
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -271,7 +271,7 @@ function App() {
                             Forcial
                           </Typography>
                           <Typography variant="body2" color="textSecondary" component="p">
-                            Antrenör ve üyeleri için yapılan bir Saas uygulamasıdır. Bubble ile yapılmıştır videolar youtube api ile alınmıştır.
+                            It is a Saas application made for coaches and their members. Made with Bubble. Videos were taken with youtube api.
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -290,10 +290,10 @@ function App() {
       </div>
       <div className="contact">
         <h1>Interested in collaborating or investing?</h1>
-        <p>I’m always open to discussing product design work or partnership opportunities.</p>
+        <p>I’m always open to discussing web development, or partnership opportunities.</p>
         
         
-        <a href="mailto:enes_efe_158@hotmail.com" rel="noopener noreferrer" target="_blank">Start a convertion</a>
+        <a href="mailto:enes_efe_158@hotmail.com" rel="noopener noreferrer" target="_blank">Start a conversation</a>
         
         
       </div>
