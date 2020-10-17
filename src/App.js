@@ -154,7 +154,7 @@ function App() {
                           <img id="bubbleLogo" src={BubbleLogo} alt="bubble__logo"/>
                         </a>
                         
-                        <Button href="https://direktsell.com/" target="_blank" id="button" variant="contained" size="small" color="primary">
+                        <Button href="https://direktsell.bubbleapps.io/" target="_blank" id="button" variant="contained" size="small" color="primary">
                           Visit Web Page 
                         </Button>
                       </CardActions>
