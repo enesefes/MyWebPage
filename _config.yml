@@ -1,6 +1,6 @@
 ---
 title: My Web Page
-timezone: UTC
+timezone: Europe/Istanbul
 collections:
   posts:
     title: Posts
