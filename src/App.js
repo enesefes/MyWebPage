@@ -10,6 +10,11 @@ import NoteApp from "./images/noteApp.png"
 import Forcial from "./images/forcila.png"
 import BubbleLogo from "./images/bubble__logo.svg"
 import './App.css';
+import ProjectDatabase from './components/ProjectData';
+import base from './base';
+import { useEffect } from 'react';
+import { useState } from 'react';
+
 
 
 
@@ -31,11 +36,55 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import { GridList } from '@material-ui/core';
+
+import { makeStyles } from '@material-ui/core/styles';
+
+import GridListTile from '@material-ui/core/GridListTile';
+
+import ListSubheader from '@material-ui/core/ListSubheader';
+
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  gridList: {
+    width: 500,
+    height: 450,
+  },
+  icon: {
+    color: 'rgba(255, 255, 255, 0.54)',
+  },
+}));
 
 
 
 function App() {
+
+  const [project, setProject] = useState([]);
+
+  useEffect(() => {
+    base('Project').select({
+      // Selecting the first 3 records in Grid view:
+      
+      view: "Grid view"
+  }).eachPage((records, fetchNextPage) => {
+      setProject (records);
+      fetchNextPage();
+    });
+    
+  });
+
+  const classes = useStyles();
+
   return (
+    
     <div className="app">
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
@@ -99,8 +148,15 @@ function App() {
       </div>
       <div className="my__projects">
               <h1>My Recent Work</h1>
+              
+              
               <div className="projects">
-                  <div className="project_contanier">
+              
+              {project.map((e) => (
+                  <ProjectDatabase key={e.id} project={e}></ProjectDatabase>
+                ))}
+                
+                <div className="project_contanier">
                     <Card >
                       <CardActionArea href="https://whatsapp-2d2e9.web.app/" target="_blank">
                         <CardMedia id="project__card__image"
