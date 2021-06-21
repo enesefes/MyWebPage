@@ -1,14 +1,10 @@
 import React from 'react';
 import logo from './images/Logo.png';
-import WpLogo from "./images/wp__logo.png"
+
 import myPhoto from './images/myPhoto.jpeg';
-import Direktsell from "./images/direktsell.com.png"
+
 import code from "./images/code.svg"
-import Direktlink from "./images/direktlink.png"
-import SaasLand from "./images/saasLandPage.png"
-import NoteApp from "./images/noteApp.png"
-import Forcial from "./images/forcila.png"
-import BubbleLogo from "./images/bubble__logo.svg"
+
 import './App.css';
 import ProjectDatabase from './components/ProjectData';
 import base from './base';
@@ -28,40 +24,13 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailIcon from '@material-ui/icons/Mail';
 
 
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
-import { GridList } from '@material-ui/core';
-
-import { makeStyles } from '@material-ui/core/styles';
-
-import GridListTile from '@material-ui/core/GridListTile';
-
-import ListSubheader from '@material-ui/core/ListSubheader';
 
 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    width: 500,
-    height: 450,
-  },
-  icon: {
-    color: 'rgba(255, 255, 255, 0.54)',
-  },
-}));
+
+
+
+
 
 
 
@@ -81,7 +50,7 @@ function App() {
     
   });
 
-  const classes = useStyles();
+  
 
   return (
     
@@ -155,194 +124,11 @@ function App() {
               {project.map((e) => (
                   <ProjectDatabase key={e.id} project={e}></ProjectDatabase>
                 ))}
-                
-                <div className="project_contanier">
-                    <Card >
-                      <CardActionArea href="https://whatsapp-2d2e9.web.app/" target="_blank">
-                        <CardMedia id="project__card__image"
-                          component="img"
-                          alt="Contemplative Reptile"
-                          height="140"
-                          image={WpLogo}
-                          title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                          <Typography id="project__heading" gutterBottom variant="h5" component="h2">
-                            Whatsapp Clone
-                          </Typography>
-                          <Typography variant="body2" color="textSecondary" component="p">
-                            This project is done with react and firebase. And user login system has been made with gmail.
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                      <CardActions>
-                        <Button href="https://github.com/enesefes/whatsappClone" target="_blank" id="button__noneBgColor" size="small" color="primary">
-                          Github
-                        </Button>
-                        <Button href="https://whatsapp-2d2e9.web.app/" target="_blank" id="button" variant="contained" size="small" color="primary">
-                          Visit Web Page
-                        </Button>
-                      </CardActions>
-                    </Card>
-                    </div>
-                   
-                  <div className="project_contanier">
-                    <Card >
-                      <CardActionArea href="https://direktsell.com/" target="_blank">
-                        <CardMedia id="project__card__image"
-                          component="img"
-                          alt="Contemplative Reptile"
-                          height="140"
-                          image={Direktsell}
-                          title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                          <Typography id="project__heading" gutterBottom variant="h5" component="h2">
-                            Direktsell.com
-                          </Typography>
-                          <Typography variant="body2" color="textSecondary" component="p">
-                            The marketplace where those who want to export and import list their ads and companies and communicate with other companies.
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                      <CardActions>
-                        <a href="https://bubble.io/" rel="noopener noreferrer" target="_blank">
-                          <img id="bubbleLogo" src={BubbleLogo} alt="bubble__logo"/>
-                        </a>
-                        
-                        <Button href="https://direktsell.bubbleapps.io/" target="_blank" id="button" variant="contained" size="small" color="primary">
-                          Visit Web Page 
-                        </Button>
-                      </CardActions>
-                    </Card>
-                  </div>
-                  <div className="project_contanier">
-                    <Card >
-                      <CardActionArea href="https://direktlink.bubbleapps.io/" target="_blank">
-                        <CardMedia id="project__card__image"
-                          component="img"
-                          alt="Contemplative Reptile"
-                          height="140"
-                          image={Direktlink}
-                          title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                          <Typography id="project__heading" gutterBottom variant="h5" component="h2">
-                            Linktree Clone
-                          </Typography>
-                          <Typography variant="body2" color="textSecondary" component="p">
-                            It is a mini e-commerce site for instagram sellers where they can add their own products and information.
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                      <CardActions>
-                      <a href="https://bubble.io/" rel="noopener noreferrer" target="_blank">
-                          <img id="bubbleLogo" src={BubbleLogo} alt="bubble__logo"/>
-                        </a>
-                        
-                        <Button href="https://direktlink.bubbleapps.io/" target="_blank" id="button" variant="contained" size="small" color="primary">
-                          Visit Web Page 
-                        </Button>
-                      </CardActions>
-                    </Card>
-                    
-                  </div>
-                  
-                  
               </div>
 
-              <div className="projects">
-                  <div className="project_contanier">
-                    <Card >
-                      <CardActionArea href="https://eflandingpagepro.bubbleapps.io/" target="_blank">
-                        <CardMedia id="project__card__image"
-                          component="img"
-                          alt="Contemplative Reptile"
-                          height="140"
-                          image={SaasLand}
-                          title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                          <Typography id="project__heading" gutterBottom variant="h5" component="h2">
-                            Saas Landing Page
-                          </Typography>
-                          <Typography variant="body2" color="textSecondary" component="p">
-                            This project consists of only one page and is made with Bubble. You can also design with Bubble.
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                      <CardActions>
-                        <a href="https://bubble.io/" rel="noopener noreferrer" target="_blank">
-                          <img id="bubbleLogo" src={BubbleLogo} alt="bubble__logo"/>
-                        </a>
-                        
-                        <Button href="https://eflandingpagepro.bubbleapps.io/" target="_blank" id="button" variant="contained" size="small" color="primary">
-                          Visit Web Page 
-                        </Button>
-                      </CardActions>
-                    </Card>
-                    </div>
-                   
-                  <div className="project_contanier">
-                    <Card >
-                      <CardActionArea href="https://upbeat-bell-787d7a.netlify.app/" target="_blank">
-                        <CardMedia id="project__card__image"
-                          component="img"
-                          alt="Contemplative Reptile"
-                          height="140"
-                          image={NoteApp}
-                          title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                          <Typography id="project__heading" gutterBottom variant="h5" component="h2">
-                            My Note App
-                          </Typography>
-                          <Typography variant="body2" color="textSecondary" component="p">
-                           This application is made for taking notes with Svelte. User login system is made using Userbase.
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                      <CardActions>
-                        <Button href="https://github.com/enesefes/svelteUserbaseNotApp" target="_blank" id="button__noneBgColor" size="small" color="primary">
-                          Github
-                        </Button>
-                        <Button href="https://upbeat-bell-787d7a.netlify.app/" target="_blank" id="button" variant="contained" size="small" color="primary">
-                          Visit Web Page
-                        </Button>
-                      </CardActions>
-                    </Card>
-                  </div>
-                  <div className="project_contanier">
-                    <Card >
-                      <CardActionArea href="https://forcial.bubbleapps.io/" target="_blank">
-                        <CardMedia id="project__card__image"
-                          component="img"
-                          alt="Contemplative Reptile"
-                          height="140"
-                          image={Forcial}
-                          title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                          <Typography id="project__heading" gutterBottom variant="h5" component="h2">
-                            Forcial
-                          </Typography>
-                          <Typography variant="body2" color="textSecondary" component="p">
-                            It is a Saas application made for coaches and their members. Made with Bubble. Videos were taken with youtube api.
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                      <CardActions>
-                        <a href="https://bubble.io/" rel="noopener noreferrer" target="_blank">
-                          <img id="bubbleLogo" src={BubbleLogo} alt="bubble__logo"/>
-                        </a>
-                        
-                        <Button href="https://forcial.bubbleapps.io/" target="_blank" id="button" variant="contained" size="small" color="primary">
-                          Visit Web Page 
-                        </Button>
-                      </CardActions>
-                    </Card>                    
-                  </div>                  
-              </div>                                                             
+             
+                
+                                                                         
       </div>
       <div className="contact">
         <h1>Interested in collaborating or investing?</h1>

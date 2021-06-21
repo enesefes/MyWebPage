@@ -41,7 +41,7 @@ function ProjectDatabase({project}) {
           </CardActionArea>
           <CardActions>
             <Button href={project.fields.Source} target="_blank" id="button__noneBgColor" size="small" color="primary">
-              Github
+              Source Code
             </Button>
             <Button href={project.fields.Link} target="_blank" id="button" variant="contained" size="small" color="primary">
               Visit Web Page
