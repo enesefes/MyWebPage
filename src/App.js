@@ -22,7 +22,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailIcon from '@material-ui/icons/Mail';
-
+import { FindInPage } from '@material-ui/icons';
 
 
 
@@ -37,16 +37,23 @@ import MailIcon from '@material-ui/icons/Mail';
 function App() {
 
   const [project, setProject] = useState([]);
+  
+  
+
+  
 
   useEffect(() => {
     base('Project').select({
       // Selecting the first 3 records in Grid view:
-      
-      view: "Grid view"
+      // filterByFormula:`{${Shopify}} = ${Platforms}`,
+      view: "Grid view",
   }).eachPage((records, fetchNextPage) => {
       setProject (records);
       fetchNextPage();
     });
+
+  
+
     
   });
 

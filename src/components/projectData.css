@@ -1,0 +1,22 @@
+.brand_logo{
+    width: auto;
+    height: 32px;
+}
+
+.project_platform {
+    display: flex;
+    align-items: center;
+    background: #ff790f4a;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.project_platform > p {
+    margin-bottom: 0;
+    margin-left: 10px;
+    color: #FF790F;
+    font-weight: bold;
+    font-size: 14px;
+}
