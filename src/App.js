@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './images/Logo.png';
 
-import myPhoto from './images/myPhoto.jpeg';
+import myPhoto from './images/myPhoto.jpg';
 
 import code from "./images/code.svg"
 
